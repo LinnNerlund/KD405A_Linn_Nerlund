@@ -1,0 +1,51 @@
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class ClockLogic implements ClockInterface {
+
+	private digitalClockGUI digitalClockGUI;
+	private int alarmHour;
+	private int alarmMinute;
+//**	private DigitalClockGUI digClockGUI;**//
+	
+	public ClockLogic(digitalClockGUI clockIn){
+		this.digitalClockGUI = clockIn;
+		Thread t = new ClockThread(this);
+		t.start();
+	}
+	
+	public void setAlarm(int hours, int minute){
+		this.alarmHour = hours;
+		this.alarmMinute = minute;
+	}
+	
+	public void clearAlarm(){
+		//setAlarm(-1, -1);
+		//digitalClockGUI.activeAlarm(false);
+		clockGUI.
+		
+	}
+	
+	
+				
+					
+				/**System.out.println("hour \t\t: " + hour);
+				System.out.println("hourOfDay \t: " + hourOfDay);
+				System.out.println("minute \t\t: " + minute);
+				System.out.println("second \t\t: " + second);
+				System.out.println("millisecond \t: " + millisecond);**/
+				
+				digitalClockGUI.setTimeOnLabel(df.format(hourOfDay) + ":" +df.format(minute) + ":" + df.format(second));
+				
+				if((hourOfDay == alarmHour && minute == alarmMinute)) {
+					digitalClockGUI.activeAlarm(true);
+					
+				}else{
+					
+					digitalClockGUI.activeAlarm(false);
+				}
+			}
+		}
+	}
+}

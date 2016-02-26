@@ -1,0 +1,55 @@
+a) vad är konstruktor?
+svar a:
+ Anropas automatiskt då ett objekt skapas med new
+ Används för att initiera instansvariabler mm.
+ Döljer lokala variabler
+ Inleds med versal precis som ett klassnanm
+ Ser ut som en metod men har samma namn som klassen (Versal förstabokstav)
+ Har ingen returtyp
+ Tom defaultkonstruktor finns om ej egen är definierad. 
+
+b) vad är instansvariabel?
+Svar b:
+ Instansvariabler (numberOfBread, timeLeft) lagrar data för
+det aktuella objektet.
+ Med ordet this anger man att man menar en
+instansvariabel exempel this.temp. Men man kan skriva bara
+temp men det är tydligare om man skriver this.temp
+ Det finns en unik uppsättning instansvariabler för varje objekt
+man skapat.
+ Kan initialiseras automatiskt eller explicit (detta görs ofta i
+konstruktorn).
+ Använd kamelnotation med inledande gemen numberOfBread
+ Beskrivande namn
+
+c) vad är instansmetoder?
+svar c:
+ Kan finnas flera i varje klass
+ Definierar vad man kan göra med det aktuella objektet
+ Har returtyp (void,int etc)
+ Kan ha inparametrar sådant som metoden behöver vet för att
+göra sitt jobb.
+ Instansmetoder når man genom syftningsoperatorn punkt . (Om
+de är publika.)
+ Använd kamelnotation med inledande gemen toastBread
+ Använd getters och setters för att ändra värde på parametrar
+getTemp setTemp
+
+d) vad innebär det att minSize är deklarerad final?
+svar d:Denna klass är slutgiltig, man kan inte ärva från den.
+
+e) vad innebär det att vissa koddelar är deklarerade private och andra public?
+svar e: Om den är privet är den bara synlig innuti klassen, 
+om den är public är den synlig för alla klasser i programmet.
+
+f) Rita ett UML diagram över klassen (visa denna för handledaren).
+svar f: 
+
+g) lägg textfilen i projektet som du skapar i uppgift 1.2.
+svar g: Jepp här e den!
+
+
+
+
+
+

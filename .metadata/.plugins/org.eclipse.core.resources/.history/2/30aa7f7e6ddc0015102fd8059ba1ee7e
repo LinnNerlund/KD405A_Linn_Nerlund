@@ -1,0 +1,57 @@
+
+
+public class ClockLogic implements ClockInterface {
+
+	private digitalClockGUI clockGUI;
+	private int alarmHour;
+	private int alarmMinute;
+//**	private DigitalClockGUI digClockGUI;**//
+	
+	public ClockLogic(digitalClockGUI clockIn){
+		this.clockGUI = clockIn;
+		Thread t = new ClockThread(this);
+		t.start();
+	}
+	
+	public void setAlarm(int hours, int minute){
+		this.alarmHour = hours;
+		this.alarmMinute = minute;
+	}
+	
+	public void clearAlarm(){
+		//setAlarm(-1, -1);
+		//digitalClockGUI.activeAlarm(false);
+		clockGUI.timeLabel.setText("No Alarm");
+		clockGUI.alarmMessage.setText("");
+		this.alarmHour =100;
+		this.alarmMinute=100;
+	}
+	
+	
+				
+					
+				/**System.out.println("hour \t\t: " + hour);
+				System.out.println("hourOfDay \t: " + hourOfDay);
+				System.out.println("minute \t\t: " + minute);
+				System.out.println("second \t\t: " + second);
+				System.out.println("millisecond \t: " + millisecond);**/
+				
+				digitalClockGUI.setTimeOnLabel(df.format(hourOfDay) + ":" +df.format(minute) + ":" + df.format(second));
+				
+				if((hourOfDay == alarmHour && minute == alarmMinute)) {
+					digitalClockGUI.activeAlarm(true);
+					
+				}else{
+					
+					digitalClockGUI.activeAlarm(false);
+				}
+
+				@Override
+				public void update(int hours, int minutes, int seconds) {
+					// TODO Auto-generated method stub
+					
+				}
+			}
+		}
+	}
+}

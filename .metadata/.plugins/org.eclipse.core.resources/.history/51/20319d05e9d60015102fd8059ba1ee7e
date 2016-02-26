@@ -1,0 +1,13 @@
+package Assigment_4B;
+
+public abstract class Mammal{
+	private int gestationTime;
+	
+	public Mammal(String latinName, int gestationTime){
+	}
+	
+	public int getGestationtime(){
+		
+	}
+
+}

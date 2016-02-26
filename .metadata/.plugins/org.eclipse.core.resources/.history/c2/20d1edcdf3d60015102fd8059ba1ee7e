@@ -1,0 +1,22 @@
+package Assigment_4B;
+
+public class Cat extends Mammal{
+	private int numberOfLifes;
+	public Cat (String latinName, int gestationTime, int numberOfLifes){
+		super(latinName, gestationTime);
+	}
+	
+	public int getNumberOfLifes(){
+		return numberOfLifes;
+	}
+	
+	public void setNumberOfLifes(int setNumberOfLifes){
+		
+	}
+	
+	@Override
+	public String getInfo(){
+		return "";
+	}
+
+}

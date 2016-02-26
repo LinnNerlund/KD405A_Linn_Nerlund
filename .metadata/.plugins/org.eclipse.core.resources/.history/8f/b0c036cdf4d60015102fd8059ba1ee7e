@@ -1,0 +1,22 @@
+package Assigment_4B;
+
+public class Dog extends Mammal {
+	private boolean stupid;
+	public Dog (String latinName, int gestationTime, boolean stupid){
+		super(latinName, gestationTime);
+	}
+	
+	public Dog (String latinName, int gestationTime, String friendlyName){
+		super(latinName, gestationTime);
+	}
+	
+	public boolean isStupis(){
+		return stupid;
+	}
+	
+	@Override
+	public String getInfo(){
+		return "";
+	}
+
+}

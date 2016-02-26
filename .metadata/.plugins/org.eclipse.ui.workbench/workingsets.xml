@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1456467488807_1" label="Assigment_5" name="Assigment_5"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1456473818074_2" label="Assigment_6" name="Assigment_6">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Assigment_5/src/digitalClockGUI.java" type="1"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1453885475060_0" label="Window Working Set" name="Aggregate for window 1453885475059"/>
 </workingSetManager>

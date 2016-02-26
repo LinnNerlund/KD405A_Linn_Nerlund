@@ -1,0 +1,16 @@
+package Assigment_4B;
+
+public class Snake extends Animal {
+	private boolean poisonus;
+	public Snake (String latinName, boolean poisonus){
+		super (latinName);
+	}
+	public boolean isPoisonus(){
+		return poisonus;
+	}
+
+	@Override
+	public String getInfo(){
+		return "";
+	}
+}

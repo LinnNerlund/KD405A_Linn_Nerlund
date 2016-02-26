@@ -1,0 +1,5 @@
+package Assigment_4B;
+
+public abstract class Animal {
+
+}

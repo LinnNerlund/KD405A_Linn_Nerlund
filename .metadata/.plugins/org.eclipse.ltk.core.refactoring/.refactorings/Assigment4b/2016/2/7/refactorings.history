@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Assigment_4B.Mamal.java&apos; to &apos;Mammal.java&apos;&#x0A;- Original project: &apos;Assigment4b&apos;&#x0A;- Original element: &apos;Assigment_4B.Mamal.java&apos;&#x0A;- Renamed element: &apos;Assigment_4B.Mammal.java&apos;" description="Rename compilation unit &apos;Mamal.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Assigment_4B{Mamal.java" name="Mammal.java" references="false" stamp="1455872397958" version="1.0"/>
+</session>
