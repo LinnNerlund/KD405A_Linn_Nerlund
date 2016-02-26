@@ -13,7 +13,7 @@ import java.awt.event.ActionEvent;
 
 public class digitalClockGUI extends JFrame {
 
-	private ClockLogic clockLogic = new ClockLogic(this);
+	private ClockLogic clockLogic;
 	private JPanel contentPane;
 	private JTextField hourTextField;
 	private JTextField minuteTextField;

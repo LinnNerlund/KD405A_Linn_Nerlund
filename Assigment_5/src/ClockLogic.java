@@ -28,7 +28,41 @@ public class ClockLogic implements ClockInterface {
 	}
 	@Override
 	public void update(int hours, int minutes, int seconds){
+		String zero1 = "";
+		String zero2 = "";
+		String zero3 = "";
+		
+		if (hours < 10){
+			zero1 = "0";
+		}
+		if (minutes < 10){
+			zero2 = "0";
 		
 	}
-
+		if (seconds < 10){
+			zero3 = "0";
+		}
+		
+		String hourString = zero1 + Integer.toString(hours);
+		String minuteString = zero2 + Integer.toString(minutes);
+		String secondString = zero3 + Integer.toString(seconds);
+		String finalTimeString = hourString + ":" + minuteString + ":" + secondString;
+		
+		clockGUI.setTimeOnLabel(finalTimeString);
+		
+		zero1 = "";
+		zero2 = "";
+		zero3 = "";
+		
+		int finalHour = hours;
+		int finalMinute = minutes;
+		
+		if (this.alarmHour == finalHour && this.alarmMinute == finalMinute){
+			System.out.println("Ring ring");
+			clockGUI.activeAlarm(true);
+			
+		}
+		
+		
+		}
 }

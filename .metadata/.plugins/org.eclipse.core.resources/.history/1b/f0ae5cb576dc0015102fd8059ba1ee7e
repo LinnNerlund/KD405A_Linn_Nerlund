@@ -13,7 +13,7 @@ import java.awt.event.ActionEvent;
 
 public class digitalClockGUI extends JFrame {
 
-	private ClockLogic clockLogic = new ClockLogic(this);
+	private ClockLogic clockLogic;
 	private JPanel contentPane;
 	private JTextField hourTextField;
 	private JTextField minuteTextField;
@@ -79,31 +79,9 @@ public class digitalClockGUI extends JFrame {
 				int hour = Integer.parseInt(hourString);
 				String minuteString = minuteTextField.getText();
 				int minute = Integer.parseInt(minuteString);
-				System.out.println(hour);
-				System.out.println(minute);
-				
-				if (hour < 0 || hour > 23 || minute < 0 || minute > 59){
-					alarmMessage.setText("please input a legit time!");
-				}else{
-					String zero1 = "";
-					String zero2 = "";
-					
-					if (hour < 10 ){
-						zero1 = "0";
-					}
-					
-					if (minute < 10){
-						zero2 = "0";
-					}
-				
-					alarmMessage.setText("");
 				clockLogic.setAlarm(hour, minute); 
 				
-				alarmLabel.setText(zero1 + hour + " : " + zero2 + minute);
-				zero1 = "";
-				zero2 = "";
-				
-				}
+				alarmLabel.setText(hourTextField.getText() + " : " + minuteTextField.getText());
 			}
 		});
 		setLabel.setBounds(311, 75, 117, 29);
